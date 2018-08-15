@@ -1,3 +1,8 @@
 ct.iml
 /.idea/
+
 /ct_consumer/ct_consumer.iml
+/ct_consumer/target/
+
+/ct_producer/ct_producer.iml
+/ct_producer/target/
