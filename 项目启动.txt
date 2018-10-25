@@ -1,0 +1,16 @@
+﻿第一天：
+	13.
+	zookeeper： /opt/module/zookeeper-3.4.13/bin/zkServer.sh start
+		    /opt/module/zookeeper-3.4.13/bin/zkServer.sh status
+	            /opt/module/zookeeper-3.4.13/bin/zkServer.sh stop
+	kafka:	cp /opt/module/
+		启动 bin/kafka-server-start.sh config/server.properties
+		主题：bin/kafka-topics.sh --zookeeper Hadoop01:2181 --topic calllog --create --replication-factor 1 --partitions 3
+		查看主题：bin/kafka-topics.sh --zookeeper hadoop01:2181 --list
+		消费者：bin/kafka-console-consumer.sh --bootstrap-server hadoop01:9092 --topic calllog --from-beginning
+	flume:
+	 	bin/flume-ng agent --conf conf/ --name a1 --conf-file /home/atguigu/calllog/flume-kafka.conf
+
+
+	14.下载HBase.jar ,读配置文件
+	
