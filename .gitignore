@@ -6,3 +6,5 @@ ct.iml
 
 /ct_producer/ct_producer.iml
 /ct_producer/target/
+
+/ct_consumer/src/main/resources/hbase_consumer.properties
